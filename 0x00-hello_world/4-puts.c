@@ -1,5 +1,3 @@
-#!/bin/bash
-
 /* Here is a script that utilizes the puts function to print */
 
 #include <stdio.h>
