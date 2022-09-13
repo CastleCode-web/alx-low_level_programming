@@ -5,6 +5,7 @@
  *
  * print_alphabet_x10 - prints alphabet of letters 10x
  *
+ * Description: prints _putchar
  * Return: void
  */
 
