@@ -5,18 +5,36 @@
  *
  * print_alphabet_x10 - prints alphabet of letters 10x
  *
- * Description: prints _putchar
  * Return: void
  */
 
 void print_alphabet_x10(void)
 {
-	int i;
+	char c;
 
-	for (i = 'a'; i <= 'z'; i++)
+	int i = 0;
+
+
+	while (i < 10)
+
 	{
-		_putchar(i);
-	}
 
-	_putchar('\n');
+		c = 'a';
+
+		while (c <= 'z')
+
+		{
+
+			_putchar(c);
+
+			c++;
+
+		}
+
+		_putchar('\n');
+
+		i++;
+
+	}
+	
 }
