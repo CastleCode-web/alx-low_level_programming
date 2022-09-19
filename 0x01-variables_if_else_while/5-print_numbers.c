@@ -13,5 +13,5 @@ int main(void)
 	for (; a < 10 ; a++)
 		printf("%d", a);
 	putchar('\n');
-	return(0);
+	return (0);
 }
