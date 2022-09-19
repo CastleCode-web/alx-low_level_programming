@@ -3,11 +3,10 @@
 #include <time.h>
 
 /**
- * main - entry point print text and assign number
+ * main - entry point 
  *
- * Description - Determining negative and positive result
+ * Return: always return 0
  *
- * Result: Answer 0 (success)
  */
 
 int main(void)
@@ -16,29 +15,21 @@ int main(void)
 	int n;
 
 	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-
-        
+	n = rand() - RAND_MAX / 2;     
         if (n > 0)
 	{
 
 		printf("%d is positive\n", n);
-
 	}
-	
 	else if (n == 0)
 	{
 
 		printf("%d is zero\n", n);
-
 	}
-
 	else if (n < 0)
 	{
 
 		printf("%d is negative\n", n);
-
 	}
-
 	return (0);
 }	
