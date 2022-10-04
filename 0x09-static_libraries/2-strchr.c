@@ -1,4 +1,5 @@
-nclude "main.h"
+#include "main.h"
+#include <stddef.h>
 /**
  * _strchr - returns a pointer to the first occurence
  * of the character c in the string s or NULL if the
