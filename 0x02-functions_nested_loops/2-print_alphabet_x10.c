@@ -3,7 +3,7 @@
 /**
  * main - check the code
  *
- * print_alphabet_x10 - prints alphabet of letters 10x
+ * print_alphabet_x10 - prints alphabet of letters 10times
  *
  * Return: void
  */
