@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * print_fib - prints fibonacci numbers
- * Return: void
+ * main - entry point to print fibonacci numbers
+ * Return: always 0 on success, -1 on error
  */
-void print_fib(void)
+int main(void)
 {
 	int i = 1, j = 2, k = i + j, n;
 
@@ -17,5 +17,6 @@ void print_fib(void)
 		j = k;
 		k = i + j;
 	}
-	_putchar('\n');
+	putchar('\n');
+	return (0);
 }
