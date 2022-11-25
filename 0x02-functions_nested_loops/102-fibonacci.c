@@ -10,8 +10,12 @@ int main(void)
 	int i = 1, j = 2, k = i + j, n;
 
 	printf("%d, %d, ", i, j);
-	for (n = k; n <= 50; n++)
+	for (n = 3; n <= 50; n++)
 	{
+/*		if (i < 0 )
+			i = -i;
+		else if (j < 0)
+			j = -j;*/
 		printf("%d, ", k);
 		i = j;
 		j = k;
