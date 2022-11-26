@@ -11,16 +11,16 @@ int main(void)
 	long int k;
 
 	k = i + j;
-	for (n = 1; n <= 10; n++)
+	for (n = 1; n <= 4000000; n++)
 	{
 		/*k = i + j;*/
 		i = j;
 		j = k;
 		k = i + j;
-		/*if ((i / 2 == 0) && (j / 2 == 0))
+		if ((i / 2 == 0) && (j / 2 == 0))
 			k = i + j;
 		else
-			continue;*/
+			continue;
 	}
 	printf("%ld\n", k);
 	return (0);
