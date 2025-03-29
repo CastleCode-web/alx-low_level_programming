@@ -7,19 +7,18 @@
  */
 int main(void)
 {
-	unsigned char a = '0';
-	int i;
+	int a = '0';
+	int b = 'a';
 
-	for (i = 0; i < 10; i++)
+	while (a <= '9')
 	{
 		putchar(a);
 		a++;
 	}
-	a = '1';
-	for (i = 0; i < 6; i++)
+	while (b <= 'f')
 	{
-		putchar('0' + a);
-		a++;
+		putchar(b);
+		b++;
 	}
 	putchar('\n');
 	return (0);

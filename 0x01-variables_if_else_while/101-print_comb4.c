@@ -1,32 +1,33 @@
 #include <stdio.h>
+
 /**
- * main - entry point
+ * main - Entry point
  *
- * Return: always returns 0
- *
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	int i;
-	int j;
-	int k;
+        int x;
+        int y;
+        int z;
 
-	for (i = 0; i <= 9; i++)
+	for (x = '0'; x <= '9'; x++)
 	{
-		for (j = 0; j <= 9; j++)
+		for (y = '1'; y <= '9'; y++)
 		{
-			for (k = 0; k <= 9; k++)
+			for (z = '2'; z <= '9'; z++)
 			{
-				if (k > j && j > i)
+				if ((x == y) || (y == z))
+					continue;
+				else if ((y < x) || (z < y))
+					continue;
+				putchar(x);
+				putchar(y);
+				putchar(z);
+				if ((x != '7') || (y != '8') || (z != '9'))
 				{
-					putchar(i + '0');
-					putchar(j + '0');
-					putchar(k + '0');
-					if (i != 7 || j != 8 || k != 9)
-					{
-						putchar(',');
-						putchar(' ');
-					}
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
