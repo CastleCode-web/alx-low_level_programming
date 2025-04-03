@@ -5,38 +5,21 @@
 /**
  * print_to_98 - prints to 98
  * @n : number to start from
- * Return:0 or 1
  */
 
 void print_to_98(int n)
 
 {
-
-	while (n < 98)
-
+	for (; n < 98; n++)
 	{
-
-		printf("%i, ", n);
-
-		n++;
-
-
+		printf("%d, ", n);
 	}
-
-
-	while (n > 98)
-
+	if (n == 98)
 	{
-
-		printf("%i, ", n);
-
-		n--;
-
+		printf("%d\n", n);
 	}
-
-	printf("98");
-
-	putchar('\n');
-
-
+	for (; n > 98; n--)
+	{
+		printf("%d, ", n);
+	}
 }
