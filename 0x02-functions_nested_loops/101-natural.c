@@ -3,26 +3,25 @@
 /**
  * main - entry point
  *
- * Return: always 0 (success), -1 on error
+ * Return: always 0 (success)
  */
 
 int main(void)
 {
-	int n;
-	int i = 3;
-	int j = 5;
-	int k;
-	int l;
-	int sum;
+	int a;
+	int b;
+	int c;
+	int d = 0;
 
-	for (n = 1; n < 1024; n++)
+	for (a = 3; a < 1024; a++)
 	{
-		k = n * i;
-		l = n * j;
-		sum = k + l;
-		if (sum > 1024)
-			break;
+		b = a % 3;
+		c = a % 5;
+		if ((b == 0) || (c == 0))
+		{
+			d = d + a;
+		}
 	}
-	printf("%d\n", sum);
+	printf("%d\n", d);
 	return (0);
 }
