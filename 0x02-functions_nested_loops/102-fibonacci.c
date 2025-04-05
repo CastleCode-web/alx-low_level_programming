@@ -1,26 +1,24 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
- * main - entry point to print fibonacci numbers
- * Return: always 0 on success, -1 on error
+ * main - entry point
+ *
+ * Return: always 0 on success
  */
 int main(void)
 {
-	int i = 1, j = 2, k = i + j, n;
+	int a;
+	unsigned long int b = 1;
+	unsigned long int c = 1;
 
-	printf("%d, %d, ", i, j);
-	for (n = 3; n <= 50; n++)
+	for (a = 1; a < 50; a++)
 	{
-/*		if (i < 0 )
-			i = -i;
-		else if (j < 0)
-			j = -j;*/
-		printf("%d, ", k);
-		i = j;
-		j = k;
-		k = i + j;
+		if (a == 1)
+			printf("%d", a);
+		b = b + c;
+		c = b - c;
+		printf(", %lu", b);
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
