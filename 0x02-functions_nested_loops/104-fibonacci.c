@@ -1,26 +1,24 @@
 #include <stdio.h>
 
 /**
- * main - entry point
- * Return: always 0 (success)
+ * main - Entry point
+ *
+ * Return: Always 0 (success)
  */
-
 int main(void)
 {
-	int n;
-	int i = 1;
-	int j = 2;
-	int k;
+        int a;
+        unsigned long int b = 1;
+        unsigned long int c = 1;
 
-	k = i + j;
-	printf("%d, %d, ", i, j);
-	for (n = 3; n <= 98; n++)
-	{
-		printf("%d, ", k);
-		i = j;
-		j = k;
-		k = i + j;
-	}
-	putchar('\n');
-	return (0);
+        for (a = 1; a <= 98; a++)
+        {
+                if (a == 1)
+                        printf("%d", a);
+                b = b + c;
+                c = b - c;
+                printf(", %lu", b);
+        }
+        printf("\n");
+        return (0);
 }
