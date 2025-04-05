@@ -5,23 +5,24 @@
  */
 int main(void)
 {
-	long int n;
-	long int i = 1;
-	long int j = 2;
-	long int k;
+	int a;
+	unsigned long int b = 1;
+	unsigned long int c = 1;
+	unsigned long int d;
+	unsigned long int e = 0;
 
-	k = i + j;
-	for (n = 1; n <= 4000000; n++)
+	for (a = 1; a <= 34; a++)
 	{
-		/*k = i + j;*/
-		i = j;
-		j = k;
-		k = i + j;
-		if ((i / 2 == 0) && (j / 2 == 0))
-			k = i + j;
-		else
-			continue;
+		b = b + c;
+		c = b - c;
+		if (b > 4000000)
+			break;
+		d = b % 2;
+		if (d == 0)
+		{
+			e = e + b;
+		}
 	}
-	printf("%ld\n", k);
+	printf("%lu\n", e);
 	return (0);
 }
